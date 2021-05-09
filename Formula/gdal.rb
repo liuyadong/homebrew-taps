@@ -90,7 +90,7 @@ class Gdal < Formula
       "--with-zstd=#{Formula["zstd"].opt_prefix}",
       "--with-liblzma=yes",
       "--with-cfitsio=#{Formula["cfitsio"].opt_prefix}",
-      "--with-hdf5=#{Formula["hdf4"].opt_prefix}",
+      "--with-hdf4=#{Formula["hdf4"].opt_prefix}",
       "--with-hdf5=#{Formula["hdf5"].opt_prefix}",
       "--with-netcdf=#{Formula["netcdf"].opt_prefix}",
       "--with-openjpeg",
