@@ -11,13 +11,6 @@ class Gdal < Formula
     regex(/href=.*?gdal[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
-  bottle do
-    sha256 arm64_big_sur: "d6e51e87c4d31029de4c7a852b88012384e322ce59937a5d25db6ebf558c95a9"
-    sha256 big_sur:       "50f776448b2c9be2575025bab201e1723daffa28fdc195100492bf82e3dffade"
-    sha256 catalina:      "f0fefb246f7f77e4fb3f9ed9507b79a954a4099822cda43a51ce8e1e8941ed5c"
-    sha256 mojave:        "685b9dcc0809b1902c9016b8c2195fa0cf15495bbf8d5cae9a48fc7347f7b983"
-  end
-
   head do
     url "https://github.com/OSGeo/gdal.git"
     depends_on "doxygen" => :build
