@@ -7,11 +7,11 @@ class Hdf4 < Formula
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "jpeg"
-  depends_on "szip" => :recommended
+  depends_on "szip"
+  depends_on "zlib"
 
   def install
     ENV.O0 # Per the release notes, -O2 can cause memory corruption
-    ENV["SZIP_INSTALL"] = HOMEBREW_PREFIX
 
     args = std_cmake_args
     args.concat [
@@ -25,7 +25,8 @@ class Hdf4 < Formula
       "-DHDF4_ENABLE_SZIP_ENCODING=ON",
       "-DHDF4_ENABLE_SZIP_SUPPORT=ON",
       "-DHDF4_ENABLE_Z_LIB_SUPPORT=ON",
-      "-DHDF4_BUILD_FORTRAN=OFF"
+      "-DHDF4_BUILD_FORTRAN=OFF",
+      "-DHDF4-BUILD_XDR_LIB=ON"
     ]
 
     mkdir "build" do
