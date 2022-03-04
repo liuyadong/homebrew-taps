@@ -3,6 +3,7 @@ class Hdf4 < Formula
   homepage "https://hdfgroup.org"
   url "https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.15/src/hdf-4.2.15.tar.gz"
   sha256 "dbeeef525af7c2d01539906c28953f0fdab7dba603d1bc1ec4a5af60d002c459"
+  head "https://github.com/HDFGroup/hdf4.git", branch: "master"
 
   depends_on "pkg-config" => :build
   depends_on "zlib"
