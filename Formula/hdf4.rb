@@ -8,14 +8,12 @@ class Hdf4 < Formula
   depends_on "pkg-config" => :build
   depends_on "zlib"
   depends_on "jpeg"
-  depends_on "szip"
 
   def install
     args = [
       "--prefix=#{prefix}",
       "--with-zlib=#{Formula["zlib"].prefix}",
       "--with-jpeg=#{Formula["jpeg"].prefix}",
-      "--with-szip=#{Formula["szip"].prefix}",
       "--disable-netcdf",
       "--disable-fortran",
       "--enable-hdf4-xdr",
