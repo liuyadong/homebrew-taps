@@ -4,8 +4,8 @@ class Hdf4 < Formula
   # url "https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.16-2/src/hdf-4.2.16-2.tar"
   # sha256 "82aa589eb328ff4e7c4644d72bcae4718eb3e840a73740230da4994ff2f47688"
   # head "https://github.com/hdfeos/hdf4.git", branch: "master"
-  url "https://github.com/HDFGroup/hdf4/releases/download/hdf4.3.1/hdf4.3.1-macos14_clang.tar.gz"
-  sha256 "eaa718424388e3f13a30148eac2106c61694960e199159ab040a284bd4a49fbd"
+  url "https://github.com/HDFGroup/hdf4/releases/download/hdf4.3.1/hdf4.3.1.tar.gz"
+  sha256 "a2c69eb752aee385b73d4255e4387134dd5e182780d64da0a5cb0d6e1d3dea3b"
   head "https://github.com/HDFGroup/hdf4.git", branch: "master"
 
   depends_on "pkg-config" => :build
